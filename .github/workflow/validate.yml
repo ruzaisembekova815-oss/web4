@@ -1,0 +1,17 @@
+name: Validate HTML
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Check HTML with the W3C validator
+        uses: Cyb3r-Jak3/html5validator@v1
+        with:
+          root: .
