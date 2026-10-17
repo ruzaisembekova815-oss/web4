@@ -1,0 +1,26 @@
+:root{--green:#0F6B5F;--orange:#F2A93B;--ink:#16302B;--bg:#F4F7F5;--line:#E6EFEC}
+body{font-family:'Montserrat',sans-serif;color:var(--ink);background:var(--line);font-size:.85rem}
+.ticket{background:#fff;border-radius:1.25rem;box-shadow:0 1rem 2.5rem rgba(22,48,43,.18);overflow:hidden}
+.ticket-head{background:var(--green);color:#fff;font-size:1.35rem;font-weight:700;margin:0;padding:1.25rem 1.5rem}
+.ticket-body{padding:1.5rem}
+.form-label,legend{font-size:.75rem;font-weight:600;float:none;margin-bottom:.35rem}
+.form-control,.form-select,.input-group-text{background-color:var(--bg);border:1px solid var(--line);border-radius:.6rem;color:var(--ink);font-size:.8rem}
+.form-control::placeholder{color:var(--ink);opacity:.55}
+.form-control:focus,.form-select:focus{border-color:var(--green);box-shadow:0 0 0 .2rem rgba(15,107,95,.2)}
+.input-group>.input-group-text{background:var(--green);border-color:var(--green);color:#fff;font-weight:600;border-radius:.6rem 0 0 .6rem}
+.input-group>.form-control{border-radius:0 .6rem .6rem 0}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:.6rem;padding:.4rem .75rem}
+.box label{display:block;font-size:.65rem;opacity:.6}
+.box .form-control{background:transparent;border:0;box-shadow:none;padding:0}
+.box:focus-within{border-color:var(--green);box-shadow:0 0 0 .2rem rgba(15,107,95,.2)}
+.trip{border:1px solid var(--green);border-radius:2rem;overflow:hidden}
+.trip .btn{border:0;border-radius:0;color:var(--green);font-size:.8rem;font-weight:600;padding:.4rem 1.1rem}
+.trip .btn-check:checked+.btn{background:var(--green);color:#fff}
+.form-check-input:checked{background-color:var(--green);border-color:var(--green)}
+.form-check-input:focus{border-color:var(--green);box-shadow:0 0 0 .2rem rgba(15,107,95,.25)}
+.form-check-label{font-size:.8rem}
+.btn-find,.btn-clear{border-radius:2rem;font-weight:700;font-size:.85rem;padding:.6rem 1.6rem}
+.btn-find{background:var(--orange);border:1px solid var(--orange);color:#fff}
+.btn-find:hover{background:#e29a2a;color:#fff}
+.btn-clear{background:#fff;border:1px solid var(--ink);color:var(--ink)}
+.btn-clear:hover{background:var(--bg)}

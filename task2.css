@@ -1,0 +1,8 @@
+/* :user-invalid / :user-valid match only after the user changed the field */
+.form-control:user-invalid,.form-select:user-invalid{border-color:#dc3545}
+.form-control:user-valid,.form-select:user-valid{border-color:#198754}
+.form-check-input:user-invalid{border-color:#dc3545}
+input:user-invalid~.invalid-feedback,
+select:user-invalid~.invalid-feedback,
+textarea:user-invalid~.invalid-feedback,
+fieldset:has(:user-invalid) .invalid-feedback{display:block}
